@@ -9,7 +9,6 @@ function evenOrOdd(number) {
 // console.log(evenOrOdd(3))
 
 
-
 // ---2---
 
 // In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
@@ -54,9 +53,6 @@ function sum(numbers) {
 // console.log(sum([1,2,3,4]))
 
 
-
-
-
 // ---4---
 
 // Summation
@@ -80,17 +76,14 @@ const summation = n => n * (n + 1) / 2;
 
 const reverseSeq = n => {
     let arr = [];
-    for (let i=n; i>0; i--) {
+    for (let i = n; i > 0; i--) {
         arr.push(i);
-    } return arr;
+    }
+    return arr;
 };
 
 
-
-
-
 // ---6---
-
 
 
 // Complete the solution so that it reverses the string passed into it.
@@ -99,10 +92,9 @@ const reverseSeq = n => {
 // 'word'   =>  'drow'
 
 
-function solution(str){
+function solution(str) {
     return str.split('').reverse().join('');
 }
-
 
 
 // ---7---
@@ -123,7 +115,6 @@ class SmallestIntegerFinder {
 }
 
 
-
 // ---8---
 //
 
@@ -136,7 +127,7 @@ class SmallestIntegerFinder {
 // 3, 3 --> 9
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
 
-const areaOrPerimeter = (l , w) => l === w ? l*w : 2*(l+w);
+const areaOrPerimeter = (l, w) => l === w ? l * w : 2 * (l + w);
 
 
 // ---9---
@@ -172,3 +163,14 @@ function findNeedle(haystack) {
 
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
+
+// ---11---
+
+// Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+//
+//     Note: input will never be an empty string
+//
+
+const fakeBin = (x) => {
+    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+}
