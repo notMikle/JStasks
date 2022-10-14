@@ -208,3 +208,21 @@ const past = (h,m,s) => 1000 * (3600 * h + 60 * m + s);
 // Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
 
 const cockroachSpeed = s => Math.floor(s / 0.036);
+
+// ---14---
+
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+//
+//     The output should be two capital letters with a dot separating them.
+//
+//     It should look like this:
+//
+// Sam Harris => S.H
+//
+// patrick feeney => P.F
+
+function abbrevName(name){
+
+    return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+
+}
