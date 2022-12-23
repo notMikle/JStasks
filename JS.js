@@ -325,3 +325,19 @@ function addBinary(a,b){
 //
 //     Write a code that gives out the total amount for different days(d).
 const rentalCarCost = d => d * 40 - ((d > 6) ? 50 : ((d > 2) ? 20 : 0));
+
+
+
+
+
+// ---21---
+
+// You get an array of numbers, return the sum of all of the positives ones.
+//
+//     Example [1,-4,7,12] => 1 + 7 + 12 = 20
+//
+// Note: if there is nothing to sum, the sum is default to 0.
+
+function positiveSum(arr) {
+    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+}
