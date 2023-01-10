@@ -341,3 +341,16 @@ const rentalCarCost = d => d * 40 - ((d > 6) ? 50 : ((d > 2) ? 20 : 0));
 function positiveSum(arr) {
     return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
 }
+
+
+
+// ---22---
+// Return the number (count) of vowels in the given string.
+//
+//     We will consider a, e, i, o, u as vowels for this Kata (but not y).
+//
+// The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+    return (str.match(/[aeiou]/ig)||[]).length;
+}
